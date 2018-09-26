@@ -1,1 +1,1 @@
-# Wordpress Horse Theme
+# Wordpress Horse Manager Plugin
