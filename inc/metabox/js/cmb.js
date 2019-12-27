@@ -1,6 +1,6 @@
 /**
  * Controls the behaviours of custom metabox fields.
- *
+ * DEPRECATED. See https://github.com/CMB2/CMB2/
  * @author Andrew Norcross
  * @author Jared Atchison
  * @author Bill Erickson
@@ -41,7 +41,7 @@ jQuery(document).ready(function ($) {
 	});
 	// Wrap date picker in class to narrow the scope of jQuery UI CSS and prevent conflicts
 	$("#ui-datepicker-div").wrap('<div class="cmb_element" />');
-	
+
 	/**
 	 * Initialize color picker
 	 */

@@ -1,25 +1,15 @@
 <?php
 
 /**
-
  * Include and setup custom metaboxes and fields.
-
- *
-
  * @category HorseManager
-
  * @package  Metaboxes
-
  * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
-
  * @link     https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
-
  */
 add_filter( 'cmb_meta_boxes', 'cmb_sample_metaboxes' );
-
-
 /**
-
+ * DEPRECATED: https://github.com/CMB2/CMB2
  * Define the metabox and field configurations.
 
  *
@@ -77,7 +67,7 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
 
 				),
 
-				
+
 
 				array(
 
@@ -377,7 +367,7 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
 
 		),
 
-	); 
+	);
 
 	/*$meta_boxes[] = array(
 
@@ -500,7 +490,7 @@ function cmb_initialize_cmb_meta_boxes() {
 add_action('add_meta_boxes', 'add_horse_img_meta_boxes');
 function add_horse_img_meta_boxes() {
     // Define the custom attachment for posts
-	
+
 	// Start by adding our menu box
 	add_meta_box(
 
@@ -578,12 +568,12 @@ function add_horse_img_meta_boxes() {
 } // end add_custom_meta_boxes
 //callbacks of metaboxes
 
-if( !wp_script_is('jquery-ui') ) { 
+if( !wp_script_is('jquery-ui') ) {
    wp_enqueue_script( 'jquery-ui' , 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js' );
 }
 
 // Implement the menu layer
-function horse_menu_ui() { 
+function horse_menu_ui() {
 
 	global $post;
 
@@ -676,7 +666,7 @@ function horse_menu_ui() {
 			// List of file names
             var files = e.target.files;
 
-            // If this is the first upload, write the upload container 
+            // If this is the first upload, write the upload container
             // and the "Selected files" lable
 			if (!jQuery('#upload-filename-container')[0]) {
 				jQuery('#upload-outline').append('<div id="upload-filename-container"><span class="selected">Selected files:</span></div>');
@@ -820,7 +810,7 @@ function horse_menu_ui() {
     	}
 
     	var deletionsList = [];
-    	
+
     	function listDeletions(id) {
     		deletionsList.push(id);
 
@@ -866,7 +856,7 @@ function horse_menu_ui() {
 
 function horse_photo_attachment() {
 
-    global $post;?>			
+    global $post;?>
 							<div id="save-reminder">
 								<p>Click "Update" below or changes will be lost.</p>
 								<p>Refresh the page to undo.</p>
@@ -891,9 +881,9 @@ function horse_photo_attachment() {
 
 							$queryLength = count($attachments);
 							$metaLength = count(get_post_meta($post->ID)['attach-list']);
-							
+
 							if ( empty(get_post_meta($post->ID)['attach-list']) == true ) {
-								
+
 								delete_post_meta($post->ID, 'attach-list');
 
 								foreach ($attachments as $attachment) {
@@ -906,12 +896,12 @@ function horse_photo_attachment() {
 
 							$attachments = get_post_meta($post->ID)['attach-list'];
 
-						
+
 							if ($attachments) { ?>
 
-								
+
 								<?php foreach ($attachments as $attachment) { ?>
-									
+
 									<li id="img_li_<?php echo $attachment;?>">
 
 									<div class="img-overlay">
@@ -926,8 +916,8 @@ function horse_photo_attachment() {
 
 
 										<a href="#TB_inline?width=600&height=550&inlineId=cropper-popup" onclick="set_img_src('<?php echo $attachment;?>')" class="thickbox crop-img"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 512 512" fill="#fff" xml:space="preserve">
-										<polygon points="350.552,354 186.337,354 350,189.458 350,327 421,327 421,162.054 421,118.861 495.424,44.512 466.937,15.758 
-											391.503,91 350.552,91 184,91 184,162 320.906,162 157,325.148 157,162.054 157,91.458 157,20 87,20 87,91 16,91 16,162 87,162 
+										<polygon points="350.552,354 186.337,354 350,189.458 350,327 421,327 421,162.054 421,118.861 495.424,44.512 466.937,15.758
+											391.503,91 350.552,91 184,91 184,162 320.906,162 157,325.148 157,162.054 157,91.458 157,20 87,20 87,91 16,91 16,162 87,162
 											87,353.674 87,424 157.812,424 350,424 350,496 421,496 421,424 491,424 491,354 421.148,354 "/>
 										</svg></a>
 
@@ -936,14 +926,14 @@ function horse_photo_attachment() {
 									</div>
 
 
-									
+
 									<input type="hidden" id="attachment_hidden_<?php echo $attachment->ID;?>" value="" name="horse_att_img[]"/>
 									<input type="hidden" id="thumbnail_id_<?php echo $attachment;?>" value="<?php echo $attachment;?>" name="thumbnail_id_<?php echo $attachment;?>"/>
-									
-									<input type="hidden" id="orginal_img_<?php echo $attachment;?>" value="<?php echo wp_get_attachment_url($attachment);?>" name="orginal_img_<?php echo $attachment;?>"/>			
-									
+
+									<input type="hidden" id="orginal_img_<?php echo $attachment;?>" value="<?php echo wp_get_attachment_url($attachment);?>" name="orginal_img_<?php echo $attachment;?>"/>
+
 									</li>
-									
+
 								<?php } ?>
 
 								<script>
@@ -987,9 +977,9 @@ function horse_photo_attachment() {
 								    	jQuery(this).find('polygon').css('fill', 'white');
 								    }
 							    </script>
-								
-							
-   
+
+
+
 <?php }  ?>
 
 <!-- UPLOADER HTML
@@ -1021,12 +1011,12 @@ function horse_photo_attachment() {
 			<input type="submit" value="Crop Image" class="btn btn-large btn-inverse" onClick="saveFormData('crop-form');"/>
 		</form>
 	</div>
-	  
-<?php 
-} 
+
+<?php
+}
 
 function horse_pedigree_callback() {
-	global $post; 
+	global $post;
 
 	$S = get_post_meta($post->ID, 's', true);
 		$SS = get_post_meta($post->ID, 'ss', true);
@@ -1075,7 +1065,7 @@ function horse_pedigree_callback() {
 <script>
 	var activeField;
 
-	// Code to dynamically 
+	// Code to dynamically
 	function renderPedigree(gender, node_id_array) {
 
 		// Import pedigree meta data
@@ -1128,7 +1118,7 @@ function horse_pedigree_callback() {
 			// Add a table column
 			jQuery('.'+gender+'-row').append('<td><table class="'+gender+'-column-'+curr_depth+'"></table></td>');
 
-				// Add n rows to the column, where n = column_rows[curr_depth] (1, 2, 4, 8)		
+				// Add n rows to the column, where n = column_rows[curr_depth] (1, 2, 4, 8)
 				for (var i = 0; i < column_rows[curr_depth]; i++) {
 					//console.log(nia[nia_cell]);
 
@@ -1200,17 +1190,17 @@ function horse_progeny_callback() {
 
 <table class="form-table cmb_metabox">
 <?php
-	
+
 	//echo "<pre>";
 	//print_r($motherquery);
 	//echo "</pre>";
 
 	if ($motherquery || $fatherquery){
 
-	    //$gender =  $names[0]->slug; 
+	    //$gender =  $names[0]->slug;
 
 	    $posts_array = get_post_meta( $post->ID, 'progeny_id');
-	  
+
 	  	echo '<ul id="progeny-list">';
 
 	  	if ( empty($motherquery->posts) ) {
@@ -1230,10 +1220,10 @@ function horse_progeny_callback() {
 	        if ($progeny->ID != $post->ID) {
 
 			   if(in_array($progeny->ID,$selected_progeny_ids)){
-			     $checked = "checked";			 
+			     $checked = "checked";
 
 			   }
-			   
+
 
 				echo '<li>
 				    <label for="">
@@ -1255,21 +1245,21 @@ function horse_progeny_callback() {
 
 </table>
 
-<?php 
+<?php
 
 }
 
 function horse_pdf_callback() {
 
-    global $post; 
+    global $post;
 
     $img = get_post_meta($post->ID, 'horse_pdf', true);
 
-	
+
 
     wp_nonce_field(plugin_basename(__FILE__), 'wp_pdf_attachment_nonce');
 
-     
+
 
     $html = '<p class="description">';
 
@@ -1287,10 +1277,10 @@ function horse_pdf_callback() {
 
 	}
 
-     
+
 
     echo $html;
 
- 
+
 
 }

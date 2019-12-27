@@ -2,28 +2,22 @@ a {
 	text-decoration: none !important;
 }
 
-.update-nag {
-	display: none;
-}
-
-
-
 #message,
-#notice {
-	display: none;
-}
-
-#screen-meta-links {
-	display: none;
+#notice,
+#screen-meta-links,
+#wpfooter,
+#poststuff #postbox-container-1,
+#poststuff h2,
+#poststuff .handlediv,
+#horse_menu button,
+#horse_menu h2,
+.update-nag {
+	display: none !important;
 }
 
 .wrap {
 	margin-top: 18px;
 	overflow: hidden;
-}
-
-#wpfooter {
-	display: none;
 }
 
 #post {
@@ -34,28 +28,12 @@ a {
 	background: rgba(0,0,0,0);
 }
 
-#post-body {
-	/*margin-right: 320px !important;*/
-}
-
-#poststuff #postbox-container-1 {
-	display: none;
-}
-
 #poststuff {
 	padding: 0 20px;
 }
 
-#poststuff h2,
-#poststuff .handlediv {
-	display: none !important;
-}
-
 h1.wp-heading-inline {
-    margin-left: 7px;
-}
-
-#edit-slug-box strong {
+	margin-left: 7px;
 }
 
 #horse_menu {
@@ -63,28 +41,20 @@ h1.wp-heading-inline {
 	border: none;
 	box-shadow: none;
 	display: flex;
-    position: absolute;
-    top: 67px;
-    right: 25px;
-
-    min-width: 0px;
-}
-
-#horse_menu button,
-#horse_menu h2 {
-	display: none;
+  position: absolute;
+  top: 67px;
+  right: 25px;
+  min-width: 0px;
 }
 
 #horse_menu > .inside {
 	padding: 0;
-    margin: 0;
+  margin: 0;
 }
 
 #horse_menu_list {
 	font-size: 14px;
-
 	margin: 0;
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -94,18 +64,14 @@ h1.wp-heading-inline {
 #horse_menu_list > li {
 	width: 115px;
 	padding: 12px 0px;
-    margin: 0 2px 0 2px;
-
-    border-bottom: 2px solid;
-    border-color: #dddddd;
-
-    color: #9e9e9e;
-    text-align: center;
+  margin: 0 2px 0 2px;
+  border-bottom: 2px solid;
+  border-color: #dddddd;
+	color: #9e9e9e;
+	text-align: center;
 	text-transform: uppercase;
 	font-weight: 500;
-
-	transition: color .1s,
-				border-color .1s;
+	transition: color .1s, border-color .1s;
 }
 
 .current-tab {
@@ -117,25 +83,17 @@ h1.wp-heading-inline {
 	color: #212d39;
 	border-color: #212d39;
 	text-shadow: none;
-
 	cursor: pointer;
-
-	transition: color .1s,
-				border-color .1s;
-
+	transition: color .1s, border-color .1s;
 }
 
 #horse_menu_list > li:active {
-
-	transition: color .1s,
-				border-color .1s;
+	transition: color .1s, border-color .1s;
 }
 
 hr.wp-header-end {
 	opacity: 0;
 }
-
-
 
 /*++++++++++++++++++++++++++++
 +++++ TAB CONTENT STYLE +++++
@@ -145,7 +103,7 @@ hr.wp-header-end {
 #horse_video button, #horse_video h2,
 #horse_profile button, #horse_profile h2,
 #horse_pedigree button, #horse_pedigree h2,
-#horse_progeny button #horse_progeny h2, {
+#horse_progeny button #horse_progeny h2 {
 	display: none;
 }
 
@@ -154,12 +112,10 @@ hr.wp-header-end {
  	pointer-events: none;
  	display: inline !important;
  	margin-left: 16px;
-
  	border: none;
-
-    font-weight: 500;
-    color: #9e9e9e;
-    text-transform: uppercase;
+	font-weight: 500;
+	color: #9e9e9e;
+	text-transform: uppercase;
  }
 
 #horse_photo .inside,
@@ -177,13 +133,11 @@ hr.wp-header-end {
 
 #titlediv #title {
 	padding: 30px 10px;
-
-    font-size: 1.5em;
+  font-size: 1.5em;
 	color: #565656;
-
-    box-shadow: none;
-    border: none;
-    border-bottom: 1px solid #ddd;
+	box-shadow: none;
+	border: none;
+	border-bottom: 1px solid #ddd;
 }
 
 #wp-content-editor-tools {
@@ -203,18 +157,14 @@ button.switch-tmce,
 	margin-bottom: 10px !important;
 	height: 36px;
 	width: 120px;
-
 	color: #aaa;
-    text-transform: uppercase;
-    font-weight: 500;
-
-    background: #fff;
-
-    border-color: #e3e3e3 !important;
-    border-radius: 120px;
-    border: 1px solid;
-
-    transition: .1s border-color;
+	text-transform: uppercase;
+	font-weight: 500;
+	background: #fff;
+	border-color: #e3e3e3 !important;
+	border-radius: 120px;
+	border: 1px solid;
+  transition: .1s border-color;
 }
 
 #insert-media-button {
@@ -230,15 +180,14 @@ button.switch-html:hover,
 button.switch-tmce:hover,
 #insert-media-button:hover {
 	border-color: #bbb !important;
-
 	transition: .1s border-color;
 }
 
 #insert-media-button {
 	width: 160px;
-    padding: 0 20px;
-    box-shadow: none;
-    text-transform: lowercase;
+	padding: 0 20px;
+	box-shadow: none;
+	text-transform: lowercase;
 }
 
 #insert-media-button:active {
@@ -248,10 +197,8 @@ button.switch-tmce:hover,
 .html-active button.switch-html,
 .tmce-active button.switch-tmce {
 	color: #656d76;
-
 	background: #f5f5f5;
-
-    border-bottom-color: inherit;
+  border-bottom-color: inherit;
 }
 
 /* Editor Menu */
@@ -261,7 +208,7 @@ button.switch-tmce:hover,
 }
 
 div.mce-toolbar-grp > div {
-    border: 1px solid #dddddd;;
+  border: 1px solid #dddddd;;
 }
 
 .ed_button .qt-dfw {
@@ -272,27 +219,22 @@ div.mce-toolbar-grp > div {
 #ed_toolbar {
 	top: 1px !important;
 	padding: 5px 0px;
-
-/*	background: #fbfbfb !important;
-
-    border-radius: 21px !important;
-    border: 1px solid #ddd !important;*/
 }
 
 #mceu_26 {
 	width: 98.7%!important;
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
 #mceu_28 {
-    display: inline-block !important;
+  display: inline-block !important;
 }
 
 #ed_toolbar {
 	top: -46px !important;
 	padding: 8px 0;
-    padding-left: 15px;
-    width: 98.7% !important;
+	padding-left: 15px;
+	width: 98.7% !important;
 }
 
 #mceu_28-body>div {
@@ -301,7 +243,7 @@ div.mce-toolbar-grp > div {
 
 #mceu_0 {
 	border-radius: 20px;
-    padding: 0 5px;
+  padding: 0 5px;
 }
 
 /* Main Editor Section */
@@ -309,19 +251,19 @@ div.mce-toolbar-grp > div {
 .wp-editor-expand #wp-content-editor-container,
 #wp-content-editor-container>div {
 	border-radius: 30px;
-    box-shadow: none;
-    margin-top: -1px;
-    border: none;
+	box-shadow: none;
+	margin-top: -1px;
+	border: none;
 }
 
 #wp-content-editor-container  {
-    width: 99.8%;
+  width: 99.8%;
 }
 
 #wp-content-editor-container iframe,
 textarea.wp-editor-area {
 	border: 1px solid #ddd;
-    border-top: 1px solid transparent;
+  border-top: 1px solid transparent;
 }
 
 textarea.wp-editor-area {
@@ -337,11 +279,11 @@ textarea.wp-editor-area {
 #post-status-info {
 	color: #92979d;
 	padding: 1em;
-    width: 100%;
-    border: none !important;
-    background-color: rgba(0,0,0,0);
-    box-shadow: none;
-    z-index: 999;
+	width: 100%;
+	border: none !important;
+	background-color: rgba(0,0,0,0);
+	box-shadow: none;
+	z-index: 999;
 }
 
 /*++++++++++++++++++++++++++++
@@ -350,24 +292,21 @@ textarea.wp-editor-area {
 
 #horse_details .cmb_metabox td,
 #horse_details .cmb_metabox th {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 #horse_details .selectbox::after {
-    font-family: "dashicons";
-    font-size: 14px;
-    content: '\f347';
-    color: #6d6d6d;
-
-    pointer-events: none;
-
-    display: inline-block;
-    height: 1px;
-    width: 1px;
-
-    position: relative;
-    top: -28px;
-    left: 96px;
+	font-family: "dashicons";
+	font-size: 14px;
+	content: '\f347';
+	color: #6d6d6d;
+	pointer-events: none;
+	display: inline-block;
+	height: 1px;
+	width: 1px;
+	position: relative;
+	top: -28px;
+	left: 96px;
 }
 
 .wp-admin select,
@@ -376,21 +315,20 @@ textarea.wp-editor-area {
 table.cmb_metabox input.cmb_text_medium,
 table.cmb_metabox input[type=text] {
 	font-size: 14px !important;
-    padding: 0 30px;
-    text-align: center;
-    text-align: -webkit-center;
-    text-align-last:center;
-    display: flex;
-    align-items: center;
-    line-height: 28px;
-    height: 36px;
-    width: 250px !important;
-    border-radius: 30px;
-    -webkit-appearance: none;
-    box-shadow: none;
-    margin-right: 0;
-
-    cursor: pointer;
+	padding: 0 30px;
+	text-align: center;
+	text-align: -webkit-center;
+	text-align-last:center;
+	display: flex;
+	align-items: center;
+	line-height: 28px;
+	height: 36px;
+	width: 250px !important;
+	border-radius: 30px;
+	-webkit-appearance: none;
+	box-shadow: none;
+	margin-right: 0;
+	cursor: pointer;
 }
 
 .wp-admin select::placeholder,
@@ -399,9 +337,9 @@ table.cmb_metabox input.cmb_text_medium::placeholder {
 }
 
 #horse_details tbody {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 #horse_details th {
@@ -422,8 +360,8 @@ table.cmb_metabox input.cmb_text_medium::placeholder {
 ++++++++++++++++++++++++++++*/
 
 #submitdiv {
-    border-top: 1px solid #eee;
-    padding-top: 20px;
+	border-top: 1px solid #eee;
+	padding-top: 20px;
 }
 
 #submitpost,
@@ -490,21 +428,18 @@ table.cmb_metabox input.cmb_text_medium::placeholder {
 #post-preview,
 #save-post {
 	min-width: 150px;
-    height: 38px;
-    padding: 10px 30px !important;
-
-    background: #80abde!important;
-    border: none!important;
-    border-radius: 20px !important;
-    box-shadow: none;
-
-    color: #ffffff !important;
-    text-shadow: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    line-height: inherit;
-
-    transition: background .1s;
+	height: 38px;
+	padding: 10px 30px !important;
+	background: #80abde!important;
+	border: none!important;
+	border-radius: 20px !important;
+	box-shadow: none;
+	color: #ffffff !important;
+	text-shadow: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: inherit;
+	transition: background .1s;
 }
 
 #publish {
@@ -517,19 +452,7 @@ table.cmb_metabox input.cmb_text_medium::placeholder {
 #post-preview:hover,
 #upload-button.hover {
 	background: #f7bc58 !important;
-
-	//transition: background .1s;
 }
-
-
-
-/*++++++++++++++++++++++++++++
-++++  Custom Fields STYLE ++++
-++++++++++++++++++++++++++++*/
-
-#acf_502 {
-}
-
 
 /*++++++++++++++++++++++++++++
 ++++ Featured Image STYLE ++++
@@ -537,16 +460,16 @@ table.cmb_metabox input.cmb_text_medium::placeholder {
 
 #postimagediv {
 	position: absolute;
-    height: 60px;
-    margin: 0;
-    top: 235px;
-    z-index: 1000;
+	height: 60px;
+	margin: 0;
+	top: 235px;
+	z-index: 1000;
 }
 #postimagediv .inside {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    top: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	top: 10px;
 }
 
 #postimagediv .inside p {
@@ -555,13 +478,13 @@ table.cmb_metabox input.cmb_text_medium::placeholder {
 
 #postimagediv .inside img {
 	object-fit: cover;
-    width: 45px;
-    height: 45px;
+	width: 45px;
+	height: 45px;
 }
 
 #set-post-thumbnail {
-    border-radius: 80px;
-    overflow: hidden;
+	border-radius: 80px;
+	overflow: hidden;
 }
 
 #set-post-thumbnail-desc {
@@ -587,32 +510,30 @@ table.cmb_metabox td {
 	font-size: 14px;
 	text-transform: uppercase;
 	color: #23282d;
-
 	width: 0px;
 }
 
 #horse_pedigree input::after {
-    content: "▼";
-    padding: 12px 8px;
-    position: absolute;
-    right: 10px;
-    top: 0;
-    z-index: 1;
-    text-align: center;
-    width: 10%;
-    height: 100%;
-    pointer-events: none;    
+	content: "▼";
+	padding: 12px 8px;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	z-index: 1;
+	text-align: center;
+	width: 10%;
+	height: 100%;
+	pointer-events: none;
 }
-
 
 table.cmb_metabox ul {
 	width: 213px;
-    padding-top: 5px;
-    margin: 0;
-    padding: 20px;
-    border-radius: 10px;
-    border-color: #bbb;
-    box-shadow: 0 5px 8px rgba(0,0,0,0.07);
+	padding-top: 5px;
+	margin: 0;
+	padding: 20px;
+	border-radius: 10px;
+	border-color: #bbb;
+	box-shadow: 0 5px 8px rgba(0,0,0,0.07);
 }
 
 .suggesstion-box ul li {
@@ -632,18 +553,12 @@ table.cmb_metabox ul {
 /*++++++++++++++++++++++++++++
 ++++++++ PROGENY STYLE +++++++
 ++++++++++++++++++++++++++++*/
-
-
-#progeny-list {
-}
-
 #progeny-list li {
 	padding: 15px;
 	font-size: 14px;
 	display: flex;
 	justify-content: space-between;
 	border-left: 2px solid #fff;
-
 	transition: border-color .15s;
 }
 
@@ -652,43 +567,37 @@ table.cmb_metabox ul {
 }
 
 #progeny-list li:hover {
-
 	border-color: #eee;
-
 }
 
 /*++++++++++++++++++++++++++++
 +++++++ CATEGORY STYLE +++++++
 ++++++++++++++++++++++++++++*/
-
 .selectit {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .cat-overlay {
-    position: absolute;
-    right: 40px;
-
-    opacity: 0;
-
-    transition:  .1s opacity;
+	position: absolute;
+	right: 40px;
+	opacity: 0;
+	transition:  .1s opacity;
 }
-	.cat-overlay span.dashicons-trash {
-		color: #aaa;
 
-		transition:  .1s color;
-	}
+.cat-overlay span.dashicons-trash {
+	color: #aaa;
+	transition:  .1s color;
+}
 
-	.cat-overlay span.dashicons-trash:hover {
-		color: #d41818;
-	}
-		
+.cat-overlay span.dashicons-trash:hover {
+	color: #d41818;
+}
 
 #horse-category-adder {
 	position: absolute;
-    top: -28px;
-    right: 0px;
+	top: -28px;
+	right: 0px;
 }
 
 a#horse-category-add-toggle {
@@ -715,26 +624,26 @@ ul.children {
 	margin-bottom: 20px !important;
 }
 
-	#horse-categorychecklist>li>ul {
-	    margin-left: 0;
-	}
+#horse-categorychecklist>li>ul {
+	margin-left: 0;
+}
 
-	#horse-categorychecklist .children li {
-		padding-left: 40px !important;
-		transition: .15s background;
-	}
+#horse-categorychecklist .children li {
+	padding-left: 40px !important;
+	transition: .15s background;
+}
 
-		#horse-categorychecklist .children li:hover {
-		    background: #f1f1f1;
-		}
+#horse-categorychecklist .children li:hover {
+	background: #f1f1f1;
+}
 
 .popular-category {
 	transition: .15s background;
 }
 
-	.popular-category:hover {
-		background: #ececec;
-	}
+.popular-category:hover {
+	background: #ececec;
+}
 
 #horse-categorychecklist li {
 	margin: 0 0;
@@ -748,11 +657,8 @@ input[type="checkbox"] {
 	border-radius: 2px;
 	margin-right: 10px;
 	box-shadow: none !important;
-
 	-webkit-text-fill-color: #ffffff;
-
-	transition: .1s background,
-				.1s -webkit-text-fill-color;
+	transition: .1s background, .1s -webkit-text-fill-color;
 }
 
 input:checked {
@@ -760,11 +666,8 @@ input:checked {
 	-webkit-text-fill-color: #f7bc58;
 	background: #f7bc58 !important;
 	border-color: #f7bc58 !important;
-
-	transition: .1s background,
-				.1s -webkit-text-fill-color;
+	transition: .1s background, .1s -webkit-text-fill-color;
 }
-
 
 /*++++++++++++++++++++++++++++
 +++++ PHOTO LOADER STYLE +++++
@@ -776,56 +679,37 @@ input:checked {
 
 #horse_photo .inside .upload-form {
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    min-height: 300px;
-    padding: 50px 0 30px 0;
-
-    background: #fbfbfb;
-    border-radius: 12px;
-    border: 1px solid #ddd;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 300px;
+	padding: 50px 0 30px 0;
+	background: #fbfbfb;
+	border-radius: 12px;
+	border: 1px solid #ddd;
 }
 
-/*#upload-outline {
-    border: 2px dashed #cacaca;
-    border-radius: 21px;
-    height: 170px;
-    min-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}*/
-
 #upload-outline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #upload-text {
 	color: #aaa;
-
 	font-size: 14px;
 	line-height: 2;
 	text-align: center;
-
 	cursor: default;
-
 	border: 2px dashed #cacaca;
-    border-radius: 21px;
-    height: 200px;
-    width: 400px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
+	border-radius: 21px;
+	height: 200px;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  position: relative;
 }
 
 #upload-tiny-text {
@@ -835,40 +719,31 @@ input:checked {
 #upload-button {
 	line-height: 1;
 	cursor: pointer;
-    background: #80abde;
-    color: #fff;
-    font-weight: 500;
-    padding: 10px 26px;
-    min-width: 150px;
-    margin-top: 10px;
-    border-radius: 21px;
-
-    transition: .1s background;
+	background: #80abde;
+	color: #fff;
+	font-weight: 500;
+	padding: 10px 26px;
+	min-width: 150px;
+	margin-top: 10px;
+	border-radius: 21px;
+	transition: .1s background;
 }
-
-/*#upload-button:hover {
-	color: #212d39;
-	border-color: #212d39;
-
-	transition: .1s color,
-				.1s border-color;
-}*/
 
 #upload-button-hidden {
 	width: 400px;
-    opacity: 0;
-    cursor: pointer;
-    height: 190px;
-    position: absolute;
-    right: 378px;
-    top: 65px;
+	opacity: 0;
+	cursor: pointer;
+	height: 190px;
+	position: absolute;
+	right: 378px;
+	top: 65px;
 }
 
 #upload-filename-container {
 	display: flex;
 	flex-direction: column;
-    justify-content: center;
-    padding: 10px;
+	justify-content: center;
+	padding: 10px;
 }
 
 #upload-filename-container>* {
@@ -877,57 +752,49 @@ input:checked {
 
 #upload-filename {
 	font-style: italic;
-    margin: 0 0 0 5px;
+  margin: 0 0 0 5px;
 }
 
 .upload-form .inactive-upload {
 	display: none;
 	background: #ccc !important;
-    border-color: #ccc !important;
-    cursor: not-allowed !important;
+	border-color: #ccc !important;
+	cursor: not-allowed !important;
 }
 
 input[value="Upload"] {
 	cursor: pointer;
-    border-radius: 30px;
-    border: 1px solid #23282d;
-    background: rgb(33, 45, 57);
-    padding: 10px 20px;
-    width: 120px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #fff;
-
-    transition: .1s background,
-				.1s border-color;
+	border-radius: 30px;
+	border: 1px solid #23282d;
+	background: rgb(33, 45, 57);
+	padding: 10px 20px;
+	width: 120px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #fff;
+  transition: .1s background, .1s border-color;
 }
 
 input[value="Upload"]:hover {
 	background: #f7bc58;
 	border-color: #f7bc58;
-
-	transition: .1s background,
-				.1s border-color;
+	transition: .1s background, .1s border-color;
 }
 
 #horse_photo .inside .upload-form .form-group {
-    text-align: center;
+  text-align: center;
 }
 
 #horse_photo ul  {
-	margin-top: 0;	
+	margin-top: 0;
 	display: flex;
 	flex-wrap: wrap;
 }
 
 #horse_photo ul li  {
 	margin: 0 10px;
-
 	margin-top: 36px;
-
 	overflow: hidden;
-	/*cursor: move;*/
-
 }
 
 #horse_photo .img-overlay {
@@ -941,14 +808,12 @@ input[value="Upload"]:hover {
 
 #save-reminder {
 	display: flex;
-    justify-content: center;
-    padding: 0 15px;
-    overflow: hidden;
-
-    height: 0px;
-
-    transition: height .25s ease-out;
-    background: #eeeeee;
+	justify-content: center;
+	padding: 0 15px;
+	overflow: hidden;
+	height: 0px;
+	transition: height .25s ease-out;
+	background: #eeeeee;
 }
 
 #save-reminder p:nth-child(1) {
@@ -958,7 +823,6 @@ input[value="Upload"]:hover {
 
 .expand {
 	height: 45px !important;
-
 	transition: height .25s ease-out;
 }
 
@@ -971,39 +835,29 @@ a.page-title-action,
 a.add-new-h2 {
 	text-transform: uppercase;
 	color: #ffffff !important;
-
 	background: #75994f!important;
-
 	margin-left: 10px !important;
 	padding: 10px 20px !important;
-
 	border: none!important;
 	border-radius: 20px !important;
-
 	font-weight: 500 !important;
-
 	transition: background .1s;
 }
 
 a.page-title-action:hover,
 a.add-new-h2:hover {
 	background: #f7bc58 !important;
-
 	transition: background .1s;
 }
 
-
 /* MOVE/ CROP/DELETE BUTONS */
-
 .attach-buttons {
 	width: 100%;
-    position: absolute;
-    bottom: 50px;
-    display: flex;
-    justify-content: center;
-
-    opacity: 0;
-
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+	justify-content: center;
+	opacity: 0;
 	transition: opacity .15s ease-out;
 }
 
@@ -1015,17 +869,14 @@ a.add-new-h2:hover {
 .attach-buttons a.crop-img polygon,
 .attach-buttons a.move-img path {
 	fill: #ffffff;
-
 	transition: fill .2s ease;
 }
 
 .attach-buttons a.delete-img path:hover {
-	/*fill: red;*/
 	transition: fill .2s ease;
 }
 
 .attach-buttons a.crop-img polygon:hover {
-	/*fill: #12cc12;*/
 	transition: fill .2s ease;
 }
 
@@ -1048,29 +899,25 @@ a.add-new-h2:hover {
 
 .img-overlay img {
 	opacity: 1;
-
 	transition: opacity .15s ease-out;
 }
 
 img.attach-hover {
 	opacity: .4;
-
 	transition: opacity .2s ease-in;
 }
 
 .attach-buttons.attach-hover {
 	opacity: 1;
-
 	transition: opacity .2s ease-in;
 }
 
-.hide{
+.hide {
  display:none;
 }
-.show{
+.show {
   display:inline;
 }
-
 
 #TB_window,
 #TB_ajaxContent {
@@ -1081,22 +928,20 @@ img.attach-hover {
 #TB_window {
 	margin-left: 0px !important;
 	top: 10% !important;
-    left: 40% !important;
+  left: 40% !important;
 }
 
 #TB_ajaxContent {
 	padding: 40px;
 }
 
-
 /*++++++++++++++++++++++++++++
 +++++++++ VIDEO STYLE ++++++++
 ++++++++++++++++++++++++++++*/
-
 #horse_video .inside tr {
 	display: flex;
 	flex-direction: column;
-    align-items: center;
+  align-items: center;
 }
 
 #horse_video .inside tr>* {
@@ -1109,7 +954,6 @@ img.attach-hover {
 	font-weight: 500;
 	text-transform: uppercase;
 	text-align: left;
-
 	padding-left: 20px;
 	padding-top: 0;
 	align-self: baseline;
@@ -1117,14 +961,11 @@ img.attach-hover {
 
 textarea#_data_horse_video {
 	resize: none;
-
-    padding: 20px;
-    width: 100%;
+	padding: 20px;
+	width: 100%;
 	border-radius: 20px;
-
-    font-family: courier;
-    font-size: 14px;
-
+	font-family: courier;
+	font-size: 14px;
 	background: #fbfbfb;
-    box-shadow: none;
+  box-shadow: none;
 }
