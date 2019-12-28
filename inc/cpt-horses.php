@@ -10,16 +10,16 @@ class horsePostType {
 
   function horsePostType() {
 		$this->labels = array(
-		'name' => __('Horses','wp_horse'),
-		'singular_name' => _x('Horse', 'post type singular name', 'wp_horse'),
-		'add_new' => __('Add Horse +','wp_horse'),
-		'add_new_item' => __('Add Horse +','wp_horse'),
-		'edit_item' => __('Edit Horse','wp_horse'),
-		'new_item' => __('New Horse','wp_horse'),
-		'view_item' => __('View This Horse','wp_horse'),
-		'search_items' => __('Search Horses','wp_horse'),
-		'not_found' =>  __('Not Found!','wp_horse'),
-		'not_found_in_trash' => __('Nothing found in Trash','wp_horse'),
+		'name' => __( 'Horses','wp_horse'),
+		'singular_name' => _x( 'Horse', 'post type singular name', 'wp_horse'),
+		'add_new' => __( 'Add Horse +','wp_horse'),
+		'add_new_item' => __( 'Add Horse +','wp_horse'),
+		'edit_item' => __( 'Edit Horse','wp_horse'),
+		'new_item' => __( 'New Horse','wp_horse'),
+		'view_item' => __( 'View This Horse','wp_horse'),
+		'search_items' => __( 'Search Horses','wp_horse'),
+		'not_found' =>  __( 'Not Found!','wp_horse'),
+		'not_found_in_trash' => __( 'Nothing found in Trash','wp_horse'),
 		'parent_item_colon' => ''
 		);
 
@@ -44,9 +44,9 @@ class horsePostType {
 //Add horse category
 function create_horse_category_taxonomy() {
     $labels = array(
-      'name' => _x('Category','wp_horse'),
-      'menu_name' => __('Categories','wp_horse'),
-      'add_new_item' => __('Add Horse category','wp_horse')
+      'name' => _x( 'Category','wp_horse'),
+      'menu_name' => __( 'Categories','wp_horse'),
+      'add_new_item' => __( 'Add Horse category','wp_horse')
     );
     register_taxonomy(
       'horse-category',
@@ -70,8 +70,8 @@ function create_horse_category_taxonomy() {
 //Add horse status
 function create_horse_status_taxonomy() {
   $labels = array(
-    'name' => _x('Status','wp_horse'),
-    'menu_name' => __('Status','wp_horse'), __( 'Add horse status','wp_horse')
+    'name' => _x( 'Status','wp_horse'),
+    'menu_name' => __( 'Status','wp_horse'), __( 'Add horse status','wp_horse')
   );
 	register_taxonomy(
     'horse-status',
@@ -95,9 +95,9 @@ function create_horse_status_taxonomy() {
 //Add horse genre
 function create_horse_genre_taxonomy() {
   $labels = array(
-    'name' => _x('Gender','wp_horse'),
-    'menu_name' => __('Genders','wp_horse'),
-    'add_new_item' => __('Add horse gender','wp_horse')
+    'name' => _x( 'Gender','wp_horse'),
+    'menu_name' => __( 'Genders','wp_horse'),
+    'add_new_item' => __( 'Add horse gender','wp_horse')
   );
 	register_taxonomy(
     'horse-gender',
@@ -121,9 +121,9 @@ function create_horse_genre_taxonomy() {
 //Add horse size
 function create_horse_bloodline_taxonomy() {
   $labels = array(
-    'name' => _x('Bloodline','wp_horse'),
-    'menu_name' => __('Bloodline','wp_horse'),
-    'add_new_item' => __('Add Bloodline','wp_horse')
+    'name' => _x( 'Bloodline','wp_horse'),
+    'menu_name' => __( 'Bloodline','wp_horse'),
+    'add_new_item' => __( 'Add Bloodline','wp_horse')
   );
   register_taxonomy(
     'horse-bloodline',
@@ -148,9 +148,9 @@ function create_horse_bloodline_taxonomy() {
 //Add horse age
 function create_horse_age_taxonomy() {
   $labels = array(
-    'name' => _x('Age','wp_horse'),
-    'menu_name' => __('Ages','wp_horse'),
-    'add_new_item' => __('Add horse age','wp_horse')
+    'name' => _x( 'Age','wp_horse'),
+    'menu_name' => __( 'Ages','wp_horse'),
+    'add_new_item' => __( 'Add horse age','wp_horse')
   );
 	register_taxonomy(
     'horse-age',
@@ -174,9 +174,9 @@ function create_horse_age_taxonomy() {
 //Add horse breed
 function create_horse_breed_taxonomy() {
   $labels = array(
-    'name' => _x('Breeds','wp_horse'),
-    'menu_name' => __('Breeds','wp_horse'),
-    'add_new_item' => __('Add horse breed','wp_horse')
+    'name' => _x( 'Breeds','wp_horse'),
+    'menu_name' => __( 'Breeds','wp_horse'),
+    'add_new_item' => __( 'Add horse breed','wp_horse')
   );
 	register_taxonomy(
     'horse-breed',
@@ -228,9 +228,9 @@ create_horse_partners_taxonomy() {
 //Add horse coat
 function create_horse_coat_taxonomy() {
   $labels = array(
-    'name' => _x('Coat','wp_horse'),
-    'menu_name' => __('Coats','wp_horse'),
-    'add_new_item' => __('Add horse coat','wp_horse')
+    'name' => _x( 'Coat','wp_horse'),
+    'menu_name' => __( 'Coats','wp_horse'),
+    'add_new_item' => __( 'Add horse coat','wp_horse')
   );
 	register_taxonomy(
     'horse-coat',
@@ -254,8 +254,8 @@ function create_horse_coat_taxonomy() {
 //Add horse pattern
 function create_horse_pattern_taxonomy() {
   $labels = array(
-    'name' => _x('Partners','wp_horse'),
-    'menu_name' => __('Partners','wp_horse'), __('Add Partners','wp_horse')
+    'name' => _x( 'Partners','wp_horse'),
+    'menu_name' => __( 'Partners','wp_horse'), __('Add Partners','wp_horse')
   );
 	register_taxonomy(
     'horse-pattern',
@@ -279,8 +279,8 @@ function create_horse_pattern_taxonomy() {
 //Add horse color
 function create_horse_color_taxonomy() {
   $labels = array(
-    'name' => _x('Color','wp_horse'),
-    'menu_name' => __('Colors','wp_horse'), __('Add horse color','wp_horse')
+    'name' => _x( 'Color','wp_horse'),
+    'menu_name' => __( 'Colors','wp_horse'), __('Add horse color','wp_horse')
   );
 	register_taxonomy(
     'horse-color',
