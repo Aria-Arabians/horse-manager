@@ -132,7 +132,7 @@ hr.wp-header-end {
 ++++++++++++++++++++++++++++*/
 
 #titlediv #title {
-	padding: 30px 10px;
+	padding: 20px 10px;
   font-size: 1.5em;
 	color: #565656;
 	box-shadow: none;
@@ -207,6 +207,11 @@ button.switch-tmce:hover,
 	border-bottom: none;
 }
 
+div.mce-toolbar-grp {
+	border-radius: 5px;
+	top: 2px !important;
+}
+
 div.mce-toolbar-grp > div {
   border: 1px solid #dddddd;;
 }
@@ -215,15 +220,8 @@ div.mce-toolbar-grp > div {
 	display: none;
 }
 
-#mceu_26,
-#ed_toolbar {
-	top: 1px !important;
-	padding: 5px 0px;
-}
-
 #mceu_26 {
 	width: 98.7%!important;
-  padding-left: 15px;
 }
 
 #mceu_28 {
@@ -231,10 +229,10 @@ div.mce-toolbar-grp > div {
 }
 
 #ed_toolbar {
+	border-radius: 0 !important;
 	top: -46px !important;
 	padding: 8px 0;
 	padding-left: 15px;
-	width: 98.7% !important;
 }
 
 #mceu_28-body>div {
@@ -293,20 +291,6 @@ textarea.wp-editor-area {
 #horse_details .cmb_metabox td,
 #horse_details .cmb_metabox th {
   border-bottom: none;
-}
-
-#horse_details .selectbox::after {
-	font-family: "dashicons";
-	font-size: 14px;
-	content: '\f347';
-	color: #6d6d6d;
-	pointer-events: none;
-	display: inline-block;
-	height: 1px;
-	width: 1px;
-	position: relative;
-	top: -28px;
-	left: 96px;
 }
 
 .wp-admin select,
@@ -462,14 +446,14 @@ table.cmb_metabox input.cmb_text_medium::placeholder {
 	position: absolute;
 	height: 60px;
 	margin: 0;
-	top: 235px;
+	top: 165px;
 	z-index: 1000;
 }
 #postimagediv .inside {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	top: 10px;
+	top: -20px;
 }
 
 #postimagediv .inside p {
